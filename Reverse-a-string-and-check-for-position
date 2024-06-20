@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class One
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        char ch;
+        String rstr="";
+        for(int i=0;i<str.length();i++)
+        {
+            ch=str.charAt(i);
+            rstr=ch+rstr;
+        }
+        int count=0;
+        for(int i=0;i<str.length();i++)
+        {
+            if(str.charAt(i)==rstr.charAt(i))
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
